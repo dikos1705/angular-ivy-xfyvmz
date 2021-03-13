@@ -1,0 +1,7 @@
+<h2>Television</h2>
+<div *ngFor="let product of products | slice:0:5">
+
+	<app-product-item [product]="product">
+	</app-product-item>
+</div>
+

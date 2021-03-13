@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgbRating } from '@ng-bootstrap/ng-bootstrap';
 import { products } from '../products';
 
 @Component({
@@ -9,7 +9,7 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+  
   share() {
     window.alert('The product has been shared!');
   }

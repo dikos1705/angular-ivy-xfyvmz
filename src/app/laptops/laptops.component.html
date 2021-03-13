@@ -1,0 +1,8 @@
+<h2>Laptops</h2>
+
+<div *ngFor="let product of products | slice:5:10">
+
+	<app-product-item [product]="product">
+	</app-product-item>
+</div>
+

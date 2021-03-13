@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-
+import { NgbRating } from "@ng-bootstrap/ng-bootstrap";
 import { products } from "../products";
+
 
 @Component({
   selector: "app-product-details",
@@ -10,14 +11,14 @@ import { products } from "../products";
 })
 export class ProductDetailsComponent implements OnInit {
   product;
-  constructor(
-    private route: ActivatedRoute,
-  ) {}
+  laptop
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = Number(routeParams.get('productId'));
+    const productIdFromRoute = Number(routeParams.get("productId"));
 
     this.product = products.find(product => product.id === productIdFromRoute);
+    
   }
 }

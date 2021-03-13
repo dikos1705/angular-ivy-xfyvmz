@@ -2,3 +2,8 @@
   width: 400px;
   height: 270px;
 }
+
+ngb-rating {
+  color:yellow;
+  font-size: 40px;
+}

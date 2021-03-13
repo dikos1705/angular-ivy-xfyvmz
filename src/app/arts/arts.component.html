@@ -1,0 +1,8 @@
+<h2>Arts</h2>
+
+<div *ngFor="let product of products | slice:15:20">
+
+	<app-product-item [product]="product">
+	</app-product-item>
+</div>
+
